@@ -1,4 +1,4 @@
-{
+heme in json - {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Mint Starter Kit",
@@ -7,11 +7,8 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "appearance": {
-    "default": "dark",
-    "background": {
-      "style": "gradient"
-    }
+  "appearance":{
+    "default":"dark"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -89,7 +86,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@aumbot.co"
+        "href": "mailto:support@aumbo.co"
       }
     ],
     "primary": {
@@ -106,3 +103,5 @@
     }
   }
 }
+
+
