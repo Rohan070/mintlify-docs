@@ -3,11 +3,14 @@
   "theme": "maple",
   "name": "AUM Docs",
   "colors": {
-    "primary": "#181818",
+    "primary": "#d6bd13",
     "light": "#181818",
     "dark": "#fff"
   },
-  "appearance": {},
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
   "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
