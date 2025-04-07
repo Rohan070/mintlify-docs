@@ -21,7 +21,7 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
+              "install-aum",
               "development"
             ]
           },
