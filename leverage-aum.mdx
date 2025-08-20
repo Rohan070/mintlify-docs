@@ -1,107 +1,41 @@
 ---
-title: 'Leverage'
-description: 'Preview changes locally to update your docs'
+title: 'Leverage AUM'
+description: 'How to use AUM to your advantage'
 ---
 
-<Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
-</Info>
+## How to Use AUM to Your Advantage
 
-Follow these steps to install and run Mintlify on your operating system:
+AUM is your **Enterprise Brain** - a powerful AI platform that runs completely on your own infrastructure, giving you full control over your data while providing enterprise-grade AI capabilities.
 
-**Step 1**: Install Mintlify:
+### Why AUM Gives You the Edge
 
-<CodeGroup>
+**Complete Data Control**: Unlike cloud-based AI tools that expose your sensitive business data to external vendors, AUM runs entirely on your infrastructure. Your data never leaves your premises, eliminating the risks of data breaches, compliance violations, and loss of intellectual property control.
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+**Unlimited AI Power**: AUM works with the latest AI models (DeepSeek, Mistral, Llama3, and more) without any additional costs. You get enterprise-level AI capabilities without the unpredictable API costs and potential data leaks that come with cloud solutions.
 
-```bash yarn
-yarn global add mintlify
-```
+**Seamless Integration**: AUM connects with your existing systems and workflows, allowing you to automate tasks across multiple applications. From creating documents and proposals to sending emails and writing in Notion, AUM works while you focus on what matters most.
 
-</CodeGroup>
+**Industry-Specific Solutions**: Whether you're in law, healthcare, finance, government, or consulting, AUM adapts to your specific needs. It can analyze contracts, handle HIPAA-compliant patient data, process financial documents, or manage classified intelligence - all while maintaining the highest security standards.
 
-**Step 2**: Navigate to the docs directory (where the `docs.json` file is located) and execute the following command:
+### Key Advantages
 
-```bash
-mintlify dev
-```
+- **Zero Cloud Risk**: Your sensitive data stays within your control
+- **Compliance Ready**: Built for HIPAA, GDPR, SOC2, and other regulatory requirements
+- **Offline Capability**: Works even in air-gapped environments or remote locations
+- **Scalable Performance**: Handle millions of records and complex workflows
+- **Cost Predictable**: No variable API costs or hidden fees
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+### Watch the AUM Overview Video
 
-### Custom Ports
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/30CDUqZOyI4?si=yZj6j8L78u0R4AVR" 
+  title="YouTube video player" 
+  frameBorder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerPolicy="strict-origin-when-cross-origin" 
+  allowFullScreen
+></iframe>
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
 
-```bash
-mintlify dev --port 3333
-```
-
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
-
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
-
-## Mintlify Versions
-
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Validating Links
-
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
-
-```bash
-mintlify broken-links
-```
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
-
-If the deployment is successful, you should see the following:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Code Formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
-  </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
